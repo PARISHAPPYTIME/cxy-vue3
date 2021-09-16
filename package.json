@@ -1,0 +1,19 @@
+{
+  "name": "study-mini-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node ./esbuild.config.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.12.28",
+    "fs-extra": "^10.0.0",
+    "koa": "^2.13.1",
+    "koa-static": "^5.0.0",
+    "livereload": "^0.9.3"
+  }
+}
