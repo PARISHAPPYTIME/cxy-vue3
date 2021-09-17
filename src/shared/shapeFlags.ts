@@ -10,5 +10,4 @@ export const enum ShapeFlags {
     ARRAY_CHILDREN = 1 << 4,
     // vnode 的 children 为 slots 类型
     SLOTS_CHILDREN = 1 << 5
-  }
-  
+}

@@ -1,14 +1,3 @@
-/**
-    const esbuildConig = () =>
-        require("esbuild").buildSync({
-            entryPoints: ["main.js"],
-            bundle: true,
-            outfile: "out.js",
-        });
-
-    esbuildConig();
-**/
-
 const esbuild = require("esbuild");
 const serve = require("koa-static");
 const Koa = require("koa");
