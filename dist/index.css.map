@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.less"],
+  "sourcesContent": ["body {\n  background-color: rgba(255, 111, 27, 0.075);\n}\n"],
+  "mappings": ";AAAA;AACE;AAAA;",
+  "names": []
+}
