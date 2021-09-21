@@ -1,32 +1,21 @@
-<p align="center">
-  <img src="./images/wordmark.svg" alt="esbuild: An extremely fast JavaScript bundler">
-  <br>
-  <a href="https://esbuild.github.io/">Website</a> |
-  <a href="https://esbuild.github.io/getting-started/">Getting started</a> |
-  <a href="https://esbuild.github.io/api/">Documentation</a> |
-  <a href="https://esbuild.github.io/plugins/">Plugins</a> |
-  <a href="https://esbuild.github.io/faq/">FAQ</a>
-</p>
+使用 esbuild 天然支持 typescript 的特性，更加方便编写 ts 代码，且不需要手动刷新
 
-## Why?
+没有使用 hmr 更新
 
-Our current build tools for the web are 10-100x slower than they could be:
+使用 koa，koa-static 部署静态资源
 
-<p align="center">
-  <img src="images/benchmark.svg" alt="Bar chart with benchmark results">
-</p>
+### 代码参考链接文档
 
-The main goal of the esbuild bundler project is to bring about a new era of build tool performance, and create an easy-to-use modern bundler along the way.
+https://zhuanlan.zhihu.com/p/394986999
 
-Major features:
+### esbuild
 
-* Extreme speed without needing a cache
-* ES6 and CommonJS modules
-* Tree shaking of ES6 modules
-* An [API](https://esbuild.github.io/api/) for JavaScript and Go
-* [TypeScript](https://esbuild.github.io/content-types/#typescript) and [JSX](https://esbuild.github.io/content-types/#jsx) syntax
-* [Source maps](https://esbuild.github.io/api/#sourcemap)
-* [Minification](https://esbuild.github.io/api/#minify)
-* [Plugins](https://esbuild.github.io/plugins/)
+https://esbuild.github.io/api/
 
-Check out the [getting started](https://esbuild.github.io/getting-started/) instructions if you want to give esbuild a try.
+### less
+
+https://github.com/iam-medvedev/esbuild-plugin-less
+
+## esbuild-plugs
+
+https://github.com/esbuild/community-plugins
