@@ -1,11 +1,20 @@
 import {
     mutableHandlers,
-    readonlyHandlers
+    readonlyHandlers,
+    shallowReadonlyHandlers
 } from './baseHandlers'
 
 export const reactiveMap = new WeakMap()
 export const readonlyMap = new WeakMap()
 export const shallowReadonlyMap = new WeakMap()
+
+export function shallowReadonly(target) {
+    return createReactiveObject(
+        target,
+        shallowReadonlyMap,
+        shallowReadonlyHandlers
+    )
+}
 
 export const enum ReactiveFlags {
     IS_REACTIVE = "__v_isReactive",

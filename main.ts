@@ -1,12 +1,37 @@
-import { reactive } from './src/reactivity/src/index'
+// import { createApp } from "./src/runtime-core/index";
+// import App from "./App";
 
-const obj = {
-    name: 'zhangsan'
-}
+// console.log(123);
+// const app = createApp(App);
 
-const proxy = reactive(obj)
+// app.mount(document.querySelector("#app"));
 
-const a = proxy.name
-proxy.name = 123
+import { effect } from "./src/reactivity/src/effect";
 
-console.log(proxy)
+const myEffect = effect(
+	function () {
+		console.log(123456789);
+	},
+	{
+		scheduler: () => {
+			console.log(this);
+		},
+		test: function () {
+			console.log(this);
+		},
+		onStop() {
+			console.log("----- 关闭的时候会执行这个");
+		},
+	}
+);
+
+console.log(myEffect);
+console.log(myEffect.effect);
+console.log("再执行一次----");
+myEffect();
+
+myEffect.effect.onStop();
+myEffect.effect.onStop();
+myEffect.effect.onStop();
+myEffect.effect.onStop();
+myEffect.effect.onStop();

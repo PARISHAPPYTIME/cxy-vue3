@@ -1,6 +1,6 @@
 import { ShapeFlags } from "../shared";
 
-interface VNodeDom {
+export interface VNodeDom {
     el: any,
     component: any,
     key: any,
@@ -35,11 +35,11 @@ export const createVNode = function (
     normalizeChildren(vnode, children)
 
     return vnode
-
-    decodeURI
 }
 
 
+// 用 symbol 作为唯一标识
+export const Text = Symbol("Text");
 
 export function normalizeChildren(vnode: VNodeDom, children) {
     if (typeof children === 'object') {

@@ -82,3 +82,10 @@ export const readonlyHandlers = {
         return true
     }
 }
+
+export const shallowReadonlyHandlers = {
+    get: shallowReadonlyGet,
+    set(target, key) {
+        return true
+    }
+}
